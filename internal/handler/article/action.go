@@ -4,8 +4,8 @@ import (
 	"math"
 	"strconv"
 
-	"github.com/armnerd/go-skeleton/internal/logic/article"
-	"github.com/armnerd/go-skeleton/pkg/response"
+	"snail/internal/logic/article"
+	"snail/pkg/response"
 
 	"github.com/gin-gonic/gin"
 )

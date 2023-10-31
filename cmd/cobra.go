@@ -4,8 +4,8 @@ import (
 	"errors"
 	"os"
 
-	"github.com/armnerd/go-skeleton/cmd/api"
-	"github.com/armnerd/go-skeleton/cmd/scripts"
+	"snail/cmd/api"
+	"snail/cmd/scripts"
 
 	"github.com/spf13/cobra"
 )

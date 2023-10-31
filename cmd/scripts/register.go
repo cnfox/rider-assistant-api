@@ -1,7 +1,8 @@
 package scripts
 
 import (
-	"github.com/armnerd/go-skeleton/cmd/scripts/demo"
+	"snail/cmd/scripts/demo"
+
 	"github.com/spf13/cobra"
 )
 

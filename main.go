@@ -5,7 +5,7 @@ import (
 	"runtime"
 	"strconv"
 
-	"github.com/armnerd/go-skeleton/cmd"
+	"snail/cmd"
 )
 
 var (

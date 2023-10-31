@@ -1,7 +1,8 @@
 package data
 
 import (
-	"github.com/armnerd/go-skeleton/pkg/mysql"
+	"snail/pkg/mysql"
+
 	"github.com/gin-gonic/gin"
 )
 

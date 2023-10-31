@@ -1,6 +1,6 @@
 package article
 
-import "github.com/armnerd/go-skeleton/internal/data"
+import "snail/internal/data"
 
 type listResult struct {
 	Category int

@@ -3,7 +3,8 @@ package redis
 import (
 	"testing"
 
-	"github.com/armnerd/go-skeleton/pkg/redis"
+	"snail/pkg/redis"
+
 	"github.com/smartystreets/goconvey/convey"
 )
 

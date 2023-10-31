@@ -1,7 +1,8 @@
 package article
 
 import (
-	"github.com/armnerd/go-skeleton/internal/data"
+	"snail/internal/data"
+
 	"github.com/gin-gonic/gin"
 )
 

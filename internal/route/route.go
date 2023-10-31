@@ -1,10 +1,12 @@
 package route
 
 import (
-	_ "github.com/armnerd/go-skeleton/docs"
-	"github.com/armnerd/go-skeleton/internal/handler/article"
-	"github.com/armnerd/go-skeleton/internal/handler/demo"
-	"github.com/armnerd/go-skeleton/internal/middleware"
+	_ "snail/docs"
+
+	"snail/internal/handler/article"
+	"snail/internal/handler/demo"
+	"snail/internal/middleware"
+
 	ginSwagger "github.com/swaggo/gin-swagger"
 	"github.com/swaggo/gin-swagger/swaggerFiles"
 

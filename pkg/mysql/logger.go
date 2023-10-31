@@ -4,7 +4,8 @@ import (
 	"fmt"
 	"time"
 
-	syslog "github.com/armnerd/go-skeleton/pkg/log"
+	syslog "snail/pkg/log"
+
 	"github.com/gin-gonic/gin"
 	"gorm.io/gorm/logger"
 	"gorm.io/gorm/utils"

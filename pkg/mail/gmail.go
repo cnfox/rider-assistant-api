@@ -3,7 +3,7 @@ package commons
 import (
 	"crypto/tls"
 
-	"github.com/armnerd/go-skeleton/config"
+	"snail/config"
 
 	"gopkg.in/gomail.v2"
 )

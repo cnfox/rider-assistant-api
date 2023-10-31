@@ -1,11 +1,11 @@
 package demo
 
 import (
-	"github.com/armnerd/go-skeleton/pkg/auth"
-	"github.com/armnerd/go-skeleton/pkg/curl"
-	syslog "github.com/armnerd/go-skeleton/pkg/log"
-	cache "github.com/armnerd/go-skeleton/pkg/redis"
-	"github.com/armnerd/go-skeleton/pkg/response"
+	"snail/pkg/auth"
+	"snail/pkg/curl"
+	syslog "snail/pkg/log"
+	cache "snail/pkg/redis"
+	"snail/pkg/response"
 
 	"github.com/gin-gonic/gin"
 	"github.com/gomodule/redigo/redis"

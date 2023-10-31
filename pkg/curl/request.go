@@ -5,7 +5,8 @@ import (
 	"io/ioutil"
 	"net/http"
 
-	syslog "github.com/armnerd/go-skeleton/pkg/log"
+	syslog "snail/pkg/log"
+
 	"github.com/gin-gonic/gin"
 
 	"github.com/idoubi/goz"

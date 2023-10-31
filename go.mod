@@ -1,4 +1,4 @@
-module github.com/armnerd/go-skeleton
+module snail
 
 go 1.14
 
@@ -17,11 +17,9 @@ require (
 	github.com/joho/godotenv v1.3.0
 	github.com/mailru/easyjson v0.7.7 // indirect
 	github.com/pelletier/go-toml/v2 v2.0.2 // indirect
-	github.com/segmentio/kafka-go v0.4.15
 	github.com/sirupsen/logrus v1.6.0
 	github.com/smartystreets/goconvey v1.7.2
 	github.com/spf13/cobra v1.4.0
-	github.com/streadway/amqp v1.0.0
 	github.com/swaggo/gin-swagger v1.2.0
 	github.com/swaggo/swag v1.8.2
 	github.com/tidwall/gjson v1.9.3

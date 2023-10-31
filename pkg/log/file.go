@@ -8,7 +8,8 @@ import (
 	"path"
 	"time"
 
-	"github.com/armnerd/go-skeleton/config"
+	"snail/config"
+
 	"github.com/gin-gonic/gin"
 
 	"github.com/sirupsen/logrus"

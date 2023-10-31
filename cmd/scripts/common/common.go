@@ -2,10 +2,10 @@ package common
 
 import (
 	"os"
+	"snail/config"
+	"snail/pkg/mysql"
+	"snail/pkg/redis"
 
-	"github.com/armnerd/go-skeleton/config"
-	"github.com/armnerd/go-skeleton/pkg/mysql"
-	"github.com/armnerd/go-skeleton/pkg/redis"
 	"github.com/joho/godotenv"
 )
 

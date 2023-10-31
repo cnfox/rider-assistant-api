@@ -1,14 +1,9 @@
 package route
 
 import (
-	_ "snail/docs"
-
-	"snail/internal/handler/article"
-	"snail/internal/handler/demo"
+	"snail/internal/handler/event"
+	"snail/internal/handler/rider"
 	"snail/internal/middleware"
-
-	ginSwagger "github.com/swaggo/gin-swagger"
-	"github.com/swaggo/gin-swagger/swaggerFiles"
 
 	"github.com/gin-gonic/gin"
 )
@@ -26,33 +21,21 @@ func Init() *gin.Engine {
 	// Welcome
 	app.GET("/", func(c *gin.Context) {
 		c.JSON(200, gin.H{
-			"Welcome": "This is go-skeleton, build with Gin and Gorm",
+			"Welcome": "This is rider assistant api",
 		})
 	})
 
-	// swagger
-	app.GET("/swagger/*any", ginSwagger.WrapHandler(swaggerFiles.Handler))
+	// 队员
+	api.POST("/rider/login", rider.Login)   // 队员登录
+	api.GET("/rider/info", rider.Info)      // 队员详情
+	api.POST("/rider/update", rider.Update) // 更改个人信息
 
-	// Blog
-	api.POST("/article/list", article.List)                            // 文章列表
-	api.POST("/article/info", article.Info)                            // 文章详情
-	api.POST("/article/add", middleware.AuthRequired(), article.Add)   // 新增文章
-	api.POST("/article/edit", middleware.AuthRequired(), article.Edit) // 编辑文章
-
-	// Redis
-	api.POST("/cache/set", demo.SetCache)
-	api.POST("/cache/get", demo.GetCache)
-
-	// Curl
-	api.GET("/curl/get", demo.CurlGet)
-	api.GET("/curl/post", demo.CurlPost)
-
-	// Log
-	api.GET("/log", demo.Log)
-
-	// Jwt
-	api.GET("/jwt/login", demo.Login)
-	api.GET("/jwt/auth", middleware.AuthRequired(), demo.Auth)
+	// 活动
+	api.GET("/event/list", event.List)        // 车队活动列表
+	api.GET("/event/info", event.Info)        // 车队活动详情
+	api.POST("/event/enroll", event.Enroll)   // 队员活动报名
+	api.POST("/event/quit", event.Quit)       // 队员退出活动
+	api.POST("/event/checkin", event.Checkin) // 队员活动签到
 
 	return app
 }

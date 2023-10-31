@@ -17,10 +17,3 @@ type Article struct {
 func (Article) TableName() string {
 	return "article"
 }
-
-/*---------------连表查询结果结构体---------------*/
-
-type JoinOtherTable struct {
-	Article
-	OtherColumn string `gorm:"column:other_column"`
-}
